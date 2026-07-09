@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-void text-ink font-body;
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Signature element: subtle CRT/LED scanline texture on the total-amount screen */
+.scanlines {
+  background-image: repeating-linear-gradient(
+    to bottom,
+    rgba(74, 222, 128, 0.05),
+    rgba(74, 222, 128, 0.05) 1px,
+    transparent 1px,
+    transparent 3px
+  );
+}
+
+/* Ledger row: category name ..... amount, dots auto-fill the gap */
+.dot-leader {
+  flex: 1 1 auto;
+  border-bottom: 1px dotted theme("colors.line");
+  margin: 0 0.5rem;
+  height: 1em;
+  transform: translateY(-0.3em);
+}
