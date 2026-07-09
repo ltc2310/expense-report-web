@@ -32,7 +32,7 @@ export function ReportPage({ repository, token }: ReportPageProps) {
 
       {state.status === "success" && (
         <div className="space-y-4">
-          <TotalScreen total={state.data.total} rangeLabel="Last 7 days" />
+          <TotalScreen total={state.data.total} from={state.data.from} to={state.data.to} />
           {state.data.byCategory.length > 0 && (
             <CategoryDonutChart byCategory={state.data.byCategory} />
           )}

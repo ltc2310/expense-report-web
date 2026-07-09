@@ -1,13 +1,18 @@
 interface TotalScreenProps {
   total: number;
-  rangeLabel: string;
+  from: Date;
+  to: Date;
 }
 
-export function TotalScreen({ total, rangeLabel }: TotalScreenProps) {
+function formatDate(date: Date): string {
+ return new Date(date).toLocaleDateString("vi-VN");
+}
+
+export function TotalScreen({ total, from, to }: TotalScreenProps) {
   return (
     <div className="scanlines rounded-lg border border-line bg-terminal px-6 py-8 text-center">
       <p className="font-mono text-xs uppercase tracking-[0.2em] text-ink-dim">
-        {rangeLabel}
+        {formatDate(from)} - {formatDate(to)}
       </p>
       <p className="mt-3 font-mono text-4xl font-bold tabular-nums text-jade sm:text-5xl">
         {total.toLocaleString("vi-VN")}

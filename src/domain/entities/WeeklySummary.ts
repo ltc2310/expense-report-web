@@ -15,4 +15,6 @@ export interface WeeklySummary {
   total: number;
   byCategory: CategorySummary[];
   transactions: Transaction[];
+  from: Date;
+  to: Date;
 }
