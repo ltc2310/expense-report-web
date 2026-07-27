@@ -4,9 +4,11 @@ import { CategorySummary } from "../../domain/entities/WeeklySummary";
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 
-// Rotating palette derived from the jade/amber accent family, kept small
-// and disciplined rather than one random color per category.
-const PALETTE = ["#4ADE80", "#F5A524", "#22C55E", "#FB923C", "#16A34A", "#38BDF8"];
+const PALETTE = [
+  "#4ADE80", "#F5A524", "#22C55E", "#FB923C",
+  "#16A34A", "#38BDF8", "#A78BFA", "#F472B6",
+  "#FACC15", "#34D399", "#F87171", "#818CF8",
+];
 
 interface CategoryDonutChartProps {
   byCategory: CategorySummary[];
@@ -29,8 +31,8 @@ export function CategoryDonutChart({ byCategory }: CategoryDonutChartProps) {
 
   return (
     <div className="rounded-lg border border-line bg-terminal p-5">
-      <p className="font-display text-sm font-semibold text-ink">By category</p>
-      <div className="mx-auto mt-4 max-w-[220px]">
+      <p className="font-display text-sm font-semibold text-ink">Theo danh mục</p>
+      <div className="mx-auto mt-4 max-w-[240px]">
         <Doughnut
           data={data}
           options={{
