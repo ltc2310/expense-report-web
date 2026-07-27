@@ -8,6 +8,9 @@ export interface Transaction {
   amount: number;
   category: string;
   note: string;
+  /** Actual spending date */
+  spentAt?: string;
+  /** Record creation date */
   createdAt?: string;
 }
 

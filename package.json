@@ -1,7 +1,7 @@
 {
   "name": "expense-report-web",
-  "version": "0.1.0",
-  "description": "Weekly expense report webview - React + Clean Architecture",
+  "version": "0.2.0",
+  "description": "Expense report webview - React + Clean Architecture",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -12,7 +12,8 @@
     "chart.js": "^4.4.4",
     "react": "^18.3.1",
     "react-chartjs-2": "^5.2.0",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "xlsx": "^0.18.5"
   },
   "devDependencies": {
     "@types/react": "^18.3.3",
