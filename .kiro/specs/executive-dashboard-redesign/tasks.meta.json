@@ -1,0 +1,271 @@
+{
+  "pbtResults": {},
+  "executionHistory": {
+    "1.1 Cài đặt và cấu hình test framework": [
+      {
+        "executionId": "e293b204-7692-4eba-8ff5-f42bb88be4ee",
+        "chatSessionId": "sess_848aeb51-ad73-4c2b-bc10-d871cb890905",
+        "timestamp": 1785228823990
+      },
+      {
+        "executionId": "e293b204-7692-4eba-8ff5-f42bb88be4ee",
+        "chatSessionId": "sess_848aeb51-ad73-4c2b-bc10-d871cb890905",
+        "timestamp": 1785228834306
+      },
+      {
+        "executionId": "e293b204-7692-4eba-8ff5-f42bb88be4ee",
+        "chatSessionId": "sess_848aeb51-ad73-4c2b-bc10-d871cb890905",
+        "timestamp": 1785229210735
+      }
+    ],
+    "1.2 Tạo utility function `formatCurrency` và `formatDateRange`": [
+      {
+        "executionId": "e293b204-7692-4eba-8ff5-f42bb88be4ee",
+        "chatSessionId": "sess_848aeb51-ad73-4c2b-bc10-d871cb890905",
+        "timestamp": 1785228824049
+      },
+      {
+        "executionId": "e293b204-7692-4eba-8ff5-f42bb88be4ee",
+        "chatSessionId": "sess_848aeb51-ad73-4c2b-bc10-d871cb890905",
+        "timestamp": 1785229217283
+      },
+      {
+        "executionId": "e293b204-7692-4eba-8ff5-f42bb88be4ee",
+        "chatSessionId": "sess_848aeb51-ad73-4c2b-bc10-d871cb890905",
+        "timestamp": 1785229885014
+      }
+    ],
+    "1.3 Tạo utility function `computeKpis` và `computeCategoryBreakdown`": [
+      {
+        "executionId": "e293b204-7692-4eba-8ff5-f42bb88be4ee",
+        "chatSessionId": "sess_848aeb51-ad73-4c2b-bc10-d871cb890905",
+        "timestamp": 1785228824095
+      },
+      {
+        "executionId": "e293b204-7692-4eba-8ff5-f42bb88be4ee",
+        "chatSessionId": "sess_848aeb51-ad73-4c2b-bc10-d871cb890905",
+        "timestamp": 1785229218190
+      },
+      {
+        "executionId": "e293b204-7692-4eba-8ff5-f42bb88be4ee",
+        "chatSessionId": "sess_848aeb51-ad73-4c2b-bc10-d871cb890905",
+        "timestamp": 1785229885860
+      }
+    ],
+    "2. Checkpoint - Đảm bảo utility functions hoạt động đúng": [
+      {
+        "executionId": "e293b204-7692-4eba-8ff5-f42bb88be4ee",
+        "chatSessionId": "sess_848aeb51-ad73-4c2b-bc10-d871cb890905",
+        "timestamp": 1785228824137
+      },
+      {
+        "executionId": "e293b204-7692-4eba-8ff5-f42bb88be4ee",
+        "chatSessionId": "sess_848aeb51-ad73-4c2b-bc10-d871cb890905",
+        "timestamp": 1785230242245
+      },
+      {
+        "executionId": "e293b204-7692-4eba-8ff5-f42bb88be4ee",
+        "chatSessionId": "sess_848aeb51-ad73-4c2b-bc10-d871cb890905",
+        "timestamp": 1785230405399
+      }
+    ],
+    "3.1 Tạo component KpiCard": [
+      {
+        "executionId": "e293b204-7692-4eba-8ff5-f42bb88be4ee",
+        "chatSessionId": "sess_848aeb51-ad73-4c2b-bc10-d871cb890905",
+        "timestamp": 1785228824177
+      },
+      {
+        "executionId": "e293b204-7692-4eba-8ff5-f42bb88be4ee",
+        "chatSessionId": "sess_848aeb51-ad73-4c2b-bc10-d871cb890905",
+        "timestamp": 1785229895777
+      },
+      {
+        "executionId": "e293b204-7692-4eba-8ff5-f42bb88be4ee",
+        "chatSessionId": "sess_848aeb51-ad73-4c2b-bc10-d871cb890905",
+        "timestamp": 1785230218157
+      }
+    ],
+    "3.2 Tạo component SummaryHeader": [
+      {
+        "executionId": "e293b204-7692-4eba-8ff5-f42bb88be4ee",
+        "chatSessionId": "sess_848aeb51-ad73-4c2b-bc10-d871cb890905",
+        "timestamp": 1785228824241
+      },
+      {
+        "executionId": "e293b204-7692-4eba-8ff5-f42bb88be4ee",
+        "chatSessionId": "sess_848aeb51-ad73-4c2b-bc10-d871cb890905",
+        "timestamp": 1785230423179
+      },
+      {
+        "executionId": "e293b204-7692-4eba-8ff5-f42bb88be4ee",
+        "chatSessionId": "sess_848aeb51-ad73-4c2b-bc10-d871cb890905",
+        "timestamp": 1785230511349
+      }
+    ],
+    "3.3 Tạo component BreakdownList": [
+      {
+        "executionId": "e293b204-7692-4eba-8ff5-f42bb88be4ee",
+        "chatSessionId": "sess_848aeb51-ad73-4c2b-bc10-d871cb890905",
+        "timestamp": 1785228824272
+      },
+      {
+        "executionId": "e293b204-7692-4eba-8ff5-f42bb88be4ee",
+        "chatSessionId": "sess_848aeb51-ad73-4c2b-bc10-d871cb890905",
+        "timestamp": 1785230423696
+      },
+      {
+        "executionId": "e293b204-7692-4eba-8ff5-f42bb88be4ee",
+        "chatSessionId": "sess_848aeb51-ad73-4c2b-bc10-d871cb890905",
+        "timestamp": 1785230512281
+      }
+    ],
+    "3.4 Tạo component SkeletonDashboard": [
+      {
+        "executionId": "e293b204-7692-4eba-8ff5-f42bb88be4ee",
+        "chatSessionId": "sess_848aeb51-ad73-4c2b-bc10-d871cb890905",
+        "timestamp": 1785228824303
+      },
+      {
+        "executionId": "e293b204-7692-4eba-8ff5-f42bb88be4ee",
+        "chatSessionId": "sess_848aeb51-ad73-4c2b-bc10-d871cb890905",
+        "timestamp": 1785229896671
+      },
+      {
+        "executionId": "e293b204-7692-4eba-8ff5-f42bb88be4ee",
+        "chatSessionId": "sess_848aeb51-ad73-4c2b-bc10-d871cb890905",
+        "timestamp": 1785230218949
+      }
+    ],
+    "4.1 Nâng cấp CategoryDonutChart với BreakdownList": [
+      {
+        "executionId": "e293b204-7692-4eba-8ff5-f42bb88be4ee",
+        "chatSessionId": "sess_848aeb51-ad73-4c2b-bc10-d871cb890905",
+        "timestamp": 1785228824335
+      },
+      {
+        "executionId": "e293b204-7692-4eba-8ff5-f42bb88be4ee",
+        "chatSessionId": "sess_848aeb51-ad73-4c2b-bc10-d871cb890905",
+        "timestamp": 1785230524935
+      },
+      {
+        "executionId": "e293b204-7692-4eba-8ff5-f42bb88be4ee",
+        "chatSessionId": "sess_848aeb51-ad73-4c2b-bc10-d871cb890905",
+        "timestamp": 1785230683461
+      }
+    ],
+    "4.2 Nâng cấp TransactionTable với pagination và summary row": [
+      {
+        "executionId": "e293b204-7692-4eba-8ff5-f42bb88be4ee",
+        "chatSessionId": "sess_848aeb51-ad73-4c2b-bc10-d871cb890905",
+        "timestamp": 1785228824377
+      },
+      {
+        "executionId": "e293b204-7692-4eba-8ff5-f42bb88be4ee",
+        "chatSessionId": "sess_848aeb51-ad73-4c2b-bc10-d871cb890905",
+        "timestamp": 1785230526038
+      },
+      {
+        "executionId": "e293b204-7692-4eba-8ff5-f42bb88be4ee",
+        "chatSessionId": "sess_848aeb51-ad73-4c2b-bc10-d871cb890905",
+        "timestamp": 1785230684319
+      }
+    ],
+    "5. Checkpoint - Đảm bảo các component hoạt động riêng lẻ": [
+      {
+        "executionId": "e293b204-7692-4eba-8ff5-f42bb88be4ee",
+        "chatSessionId": "sess_848aeb51-ad73-4c2b-bc10-d871cb890905",
+        "timestamp": 1785228824428
+      },
+      {
+        "executionId": "e293b204-7692-4eba-8ff5-f42bb88be4ee",
+        "chatSessionId": "sess_848aeb51-ad73-4c2b-bc10-d871cb890905",
+        "timestamp": 1785230690668
+      },
+      {
+        "executionId": "e293b204-7692-4eba-8ff5-f42bb88be4ee",
+        "chatSessionId": "sess_848aeb51-ad73-4c2b-bc10-d871cb890905",
+        "timestamp": 1785230859019
+      }
+    ],
+    "6.1 Tạo DashboardPage thay thế ReportPage": [
+      {
+        "executionId": "e293b204-7692-4eba-8ff5-f42bb88be4ee",
+        "chatSessionId": "sess_848aeb51-ad73-4c2b-bc10-d871cb890905",
+        "timestamp": 1785228824472
+      },
+      {
+        "executionId": "e293b204-7692-4eba-8ff5-f42bb88be4ee",
+        "chatSessionId": "sess_848aeb51-ad73-4c2b-bc10-d871cb890905",
+        "timestamp": 1785230864373
+      },
+      {
+        "executionId": "e293b204-7692-4eba-8ff5-f42bb88be4ee",
+        "chatSessionId": "sess_848aeb51-ad73-4c2b-bc10-d871cb890905",
+        "timestamp": 1785230989872
+      }
+    ],
+    "6.2 Cập nhật App.tsx để sử dụng DashboardPage": [
+      {
+        "executionId": "e293b204-7692-4eba-8ff5-f42bb88be4ee",
+        "chatSessionId": "sess_848aeb51-ad73-4c2b-bc10-d871cb890905",
+        "timestamp": 1785228824511
+      },
+      {
+        "executionId": "e293b204-7692-4eba-8ff5-f42bb88be4ee",
+        "chatSessionId": "sess_848aeb51-ad73-4c2b-bc10-d871cb890905",
+        "timestamp": 1785230995173
+      },
+      {
+        "executionId": "e293b204-7692-4eba-8ff5-f42bb88be4ee",
+        "chatSessionId": "sess_848aeb51-ad73-4c2b-bc10-d871cb890905",
+        "timestamp": 1785231055428
+      }
+    ],
+    "7. Checkpoint cuối cùng - Đảm bảo toàn bộ hệ thống hoạt động": [
+      {
+        "executionId": "e293b204-7692-4eba-8ff5-f42bb88be4ee",
+        "chatSessionId": "sess_848aeb51-ad73-4c2b-bc10-d871cb890905",
+        "timestamp": 1785228824549
+      },
+      {
+        "executionId": "e293b204-7692-4eba-8ff5-f42bb88be4ee",
+        "chatSessionId": "sess_848aeb51-ad73-4c2b-bc10-d871cb890905",
+        "timestamp": 1785231062009
+      },
+      {
+        "executionId": "e293b204-7692-4eba-8ff5-f42bb88be4ee",
+        "chatSessionId": "sess_848aeb51-ad73-4c2b-bc10-d871cb890905",
+        "timestamp": 1785231119295
+      }
+    ],
+    "1. Thiết lập cơ sở hạ tầng: test framework và utility functions": [
+      {
+        "executionId": "e293b204-7692-4eba-8ff5-f42bb88be4ee",
+        "chatSessionId": "sess_848aeb51-ad73-4c2b-bc10-d871cb890905",
+        "timestamp": 1785229885894
+      }
+    ],
+    "3. Xây dựng các component mới": [
+      {
+        "executionId": "e293b204-7692-4eba-8ff5-f42bb88be4ee",
+        "chatSessionId": "sess_848aeb51-ad73-4c2b-bc10-d871cb890905",
+        "timestamp": 1785230512355
+      }
+    ],
+    "4. Refactor components hiện có": [
+      {
+        "executionId": "e293b204-7692-4eba-8ff5-f42bb88be4ee",
+        "chatSessionId": "sess_848aeb51-ad73-4c2b-bc10-d871cb890905",
+        "timestamp": 1785230684352
+      }
+    ],
+    "6. Tích hợp DashboardPage và kết nối toàn bộ": [
+      {
+        "executionId": "e293b204-7692-4eba-8ff5-f42bb88be4ee",
+        "chatSessionId": "sess_848aeb51-ad73-4c2b-bc10-d871cb890905",
+        "timestamp": 1785231055462
+      }
+    ]
+  }
+}

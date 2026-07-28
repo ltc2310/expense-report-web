@@ -1,6 +1,9 @@
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
 import { Doughnut } from "react-chartjs-2";
 import { CategorySummary } from "../../domain/entities/WeeklySummary";
+import { computeCategoryBreakdown } from "../utils/kpiCalculations";
+import { formatCurrency } from "../utils/formatters";
+import { BreakdownList } from "./BreakdownList";
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 
@@ -12,10 +15,23 @@ const PALETTE = [
 
 interface CategoryDonutChartProps {
   byCategory: CategorySummary[];
+  total: number;
 }
 
-export function CategoryDonutChart({ byCategory }: CategoryDonutChartProps) {
+export function CategoryDonutChart({ byCategory, total }: CategoryDonutChartProps) {
+  if (byCategory.length === 0) {
+    return (
+      <div className="rounded-lg border border-line bg-terminal p-5">
+        <p className="font-display text-sm font-semibold text-ink">Theo danh mục</p>
+        <p className="mt-6 text-center text-sm text-ink-dim">
+          Chưa có dữ liệu danh mục
+        </p>
+      </div>
+    );
+  }
+
   const sorted = [...byCategory].sort((a, b) => b.total - a.total);
+  const breakdownItems = computeCategoryBreakdown(byCategory, total);
 
   const data = {
     labels: sorted.map((c) => c.category),
@@ -32,29 +48,31 @@ export function CategoryDonutChart({ byCategory }: CategoryDonutChartProps) {
   return (
     <div className="rounded-lg border border-line bg-terminal p-5">
       <p className="font-display text-sm font-semibold text-ink">Theo danh mục</p>
-      <div className="mx-auto mt-4 max-w-[240px]">
-        <Doughnut
-          data={data}
-          options={{
-            plugins: {
-              legend: {
-                position: "bottom",
-                labels: {
-                  color: "#DCE8DE",
-                  font: { family: "Inter", size: 11 },
-                  boxWidth: 10,
-                  padding: 12,
+      <div className="mt-4 flex flex-col lg:flex-row lg:items-start lg:gap-6">
+        <div className="mx-auto max-w-[240px] shrink-0">
+          <Doughnut
+            data={data}
+            options={{
+              plugins: {
+                legend: {
+                  display: false,
+                },
+                tooltip: {
+                  callbacks: {
+                    label: (ctx) => {
+                      const value = Number(ctx.raw);
+                      const percentage = total > 0 ? Math.round((value / total) * 100) : 0;
+                      return ` ${ctx.label}: ${formatCurrency(value)} (${percentage}%)`;
+                    },
+                  },
                 },
               },
-              tooltip: {
-                callbacks: {
-                  label: (ctx) =>
-                    ` ${ctx.label}: ${Number(ctx.raw).toLocaleString("vi-VN")}đ`,
-                },
-              },
-            },
-          }}
-        />
+            }}
+          />
+        </div>
+        <div className="mt-4 flex-1 lg:mt-0">
+          <BreakdownList items={breakdownItems} />
+        </div>
       </div>
     </div>
   );
