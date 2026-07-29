@@ -1,0 +1,360 @@
+{
+  "pbtResults": {},
+  "executionHistory": {
+    "1.1 Create domain entities file `src/domain/entities/TrendReport.ts`": [
+      {
+        "executionId": "71e847ee-7e0f-4214-9792-11a3bd91b49d",
+        "chatSessionId": "sess_e826ddf7-353c-4649-b7bb-66ece68c8356",
+        "timestamp": 1785312757477
+      },
+      {
+        "executionId": "71e847ee-7e0f-4214-9792-11a3bd91b49d",
+        "chatSessionId": "sess_e826ddf7-353c-4649-b7bb-66ece68c8356",
+        "timestamp": 1785312767040
+      },
+      {
+        "executionId": "71e847ee-7e0f-4214-9792-11a3bd91b49d",
+        "chatSessionId": "sess_e826ddf7-353c-4649-b7bb-66ece68c8356",
+        "timestamp": 1785312955956
+      }
+    ],
+    "1.2 Create port interface file `src/domain/ports/TrendRepository.ts`": [
+      {
+        "executionId": "71e847ee-7e0f-4214-9792-11a3bd91b49d",
+        "chatSessionId": "sess_e826ddf7-353c-4649-b7bb-66ece68c8356",
+        "timestamp": 1785312757516
+      },
+      {
+        "executionId": "71e847ee-7e0f-4214-9792-11a3bd91b49d",
+        "chatSessionId": "sess_e826ddf7-353c-4649-b7bb-66ece68c8356",
+        "timestamp": 1785312961602
+      },
+      {
+        "executionId": "71e847ee-7e0f-4214-9792-11a3bd91b49d",
+        "chatSessionId": "sess_e826ddf7-353c-4649-b7bb-66ece68c8356",
+        "timestamp": 1785313028782
+      }
+    ],
+    "2.1 Create `src/infrastructure/api/HttpTrendRepository.ts`": [
+      {
+        "executionId": "71e847ee-7e0f-4214-9792-11a3bd91b49d",
+        "chatSessionId": "sess_e826ddf7-353c-4649-b7bb-66ece68c8356",
+        "timestamp": 1785312757554
+      },
+      {
+        "executionId": "71e847ee-7e0f-4214-9792-11a3bd91b49d",
+        "chatSessionId": "sess_e826ddf7-353c-4649-b7bb-66ece68c8356",
+        "timestamp": 1785313033901
+      },
+      {
+        "executionId": "71e847ee-7e0f-4214-9792-11a3bd91b49d",
+        "chatSessionId": "sess_e826ddf7-353c-4649-b7bb-66ece68c8356",
+        "timestamp": 1785313444154
+      }
+    ],
+    "3.1 Create `src/application/hooks/useTrendReport.ts`": [
+      {
+        "executionId": "71e847ee-7e0f-4214-9792-11a3bd91b49d",
+        "chatSessionId": "sess_e826ddf7-353c-4649-b7bb-66ece68c8356",
+        "timestamp": 1785312757589
+      },
+      {
+        "executionId": "71e847ee-7e0f-4214-9792-11a3bd91b49d",
+        "chatSessionId": "sess_e826ddf7-353c-4649-b7bb-66ece68c8356",
+        "timestamp": 1785313455103
+      },
+      {
+        "executionId": "71e847ee-7e0f-4214-9792-11a3bd91b49d",
+        "chatSessionId": "sess_e826ddf7-353c-4649-b7bb-66ece68c8356",
+        "timestamp": 1785313794013
+      }
+    ],
+    "4. Checkpoint - Ensure all tests pass": [
+      {
+        "executionId": "71e847ee-7e0f-4214-9792-11a3bd91b49d",
+        "chatSessionId": "sess_e826ddf7-353c-4649-b7bb-66ece68c8356",
+        "timestamp": 1785312757622
+      },
+      {
+        "executionId": "71e847ee-7e0f-4214-9792-11a3bd91b49d",
+        "chatSessionId": "sess_e826ddf7-353c-4649-b7bb-66ece68c8356",
+        "timestamp": 1785313813683
+      },
+      {
+        "executionId": "71e847ee-7e0f-4214-9792-11a3bd91b49d",
+        "chatSessionId": "sess_e826ddf7-353c-4649-b7bb-66ece68c8356",
+        "timestamp": 1785313846748
+      }
+    ],
+    "5.1 Create `src/presentation/utils/trendKpiCalculations.ts`": [
+      {
+        "executionId": "71e847ee-7e0f-4214-9792-11a3bd91b49d",
+        "chatSessionId": "sess_e826ddf7-353c-4649-b7bb-66ece68c8356",
+        "timestamp": 1785312757687
+      },
+      {
+        "executionId": "71e847ee-7e0f-4214-9792-11a3bd91b49d",
+        "chatSessionId": "sess_e826ddf7-353c-4649-b7bb-66ece68c8356",
+        "timestamp": 1785313034750
+      },
+      {
+        "executionId": "71e847ee-7e0f-4214-9792-11a3bd91b49d",
+        "chatSessionId": "sess_e826ddf7-353c-4649-b7bb-66ece68c8356",
+        "timestamp": 1785313443312
+      }
+    ],
+    "5.2 Create `src/presentation/utils/trendHelpers.ts`": [
+      {
+        "executionId": "71e847ee-7e0f-4214-9792-11a3bd91b49d",
+        "chatSessionId": "sess_e826ddf7-353c-4649-b7bb-66ece68c8356",
+        "timestamp": 1785312757722
+      },
+      {
+        "executionId": "71e847ee-7e0f-4214-9792-11a3bd91b49d",
+        "chatSessionId": "sess_e826ddf7-353c-4649-b7bb-66ece68c8356",
+        "timestamp": 1785313035592
+      },
+      {
+        "executionId": "71e847ee-7e0f-4214-9792-11a3bd91b49d",
+        "chatSessionId": "sess_e826ddf7-353c-4649-b7bb-66ece68c8356",
+        "timestamp": 1785313444968
+      }
+    ],
+    "6.1 Create `src/presentation/components/TrendLineChart.tsx`": [
+      {
+        "executionId": "71e847ee-7e0f-4214-9792-11a3bd91b49d",
+        "chatSessionId": "sess_e826ddf7-353c-4649-b7bb-66ece68c8356",
+        "timestamp": 1785312757752
+      },
+      {
+        "executionId": "71e847ee-7e0f-4214-9792-11a3bd91b49d",
+        "chatSessionId": "sess_e826ddf7-353c-4649-b7bb-66ece68c8356",
+        "timestamp": 1785313892463
+      },
+      {
+        "executionId": "71e847ee-7e0f-4214-9792-11a3bd91b49d",
+        "chatSessionId": "sess_e826ddf7-353c-4649-b7bb-66ece68c8356",
+        "timestamp": 1785314329484
+      }
+    ],
+    "6.2 Create `src/presentation/components/CategoryStackedChart.tsx`": [
+      {
+        "executionId": "71e847ee-7e0f-4214-9792-11a3bd91b49d",
+        "chatSessionId": "sess_e826ddf7-353c-4649-b7bb-66ece68c8356",
+        "timestamp": 1785312757782
+      },
+      {
+        "executionId": "71e847ee-7e0f-4214-9792-11a3bd91b49d",
+        "chatSessionId": "sess_e826ddf7-353c-4649-b7bb-66ece68c8356",
+        "timestamp": 1785313893343
+      },
+      {
+        "executionId": "71e847ee-7e0f-4214-9792-11a3bd91b49d",
+        "chatSessionId": "sess_e826ddf7-353c-4649-b7bb-66ece68c8356",
+        "timestamp": 1785314330377
+      }
+    ],
+    "7.1 Create `src/presentation/components/CategoryTrendTable.tsx`": [
+      {
+        "executionId": "71e847ee-7e0f-4214-9792-11a3bd91b49d",
+        "chatSessionId": "sess_e826ddf7-353c-4649-b7bb-66ece68c8356",
+        "timestamp": 1785312757813
+      },
+      {
+        "executionId": "71e847ee-7e0f-4214-9792-11a3bd91b49d",
+        "chatSessionId": "sess_e826ddf7-353c-4649-b7bb-66ece68c8356",
+        "timestamp": 1785313894096
+      },
+      {
+        "executionId": "71e847ee-7e0f-4214-9792-11a3bd91b49d",
+        "chatSessionId": "sess_e826ddf7-353c-4649-b7bb-66ece68c8356",
+        "timestamp": 1785314331256
+      }
+    ],
+    "7.2 Create `src/presentation/components/MonthSelector.tsx`": [
+      {
+        "executionId": "71e847ee-7e0f-4214-9792-11a3bd91b49d",
+        "chatSessionId": "sess_e826ddf7-353c-4649-b7bb-66ece68c8356",
+        "timestamp": 1785312757846
+      },
+      {
+        "executionId": "71e847ee-7e0f-4214-9792-11a3bd91b49d",
+        "chatSessionId": "sess_e826ddf7-353c-4649-b7bb-66ece68c8356",
+        "timestamp": 1785313894968
+      },
+      {
+        "executionId": "71e847ee-7e0f-4214-9792-11a3bd91b49d",
+        "chatSessionId": "sess_e826ddf7-353c-4649-b7bb-66ece68c8356",
+        "timestamp": 1785314331985
+      }
+    ],
+    "7.3 Create `src/presentation/components/TrendHeader.tsx`": [
+      {
+        "executionId": "71e847ee-7e0f-4214-9792-11a3bd91b49d",
+        "chatSessionId": "sess_e826ddf7-353c-4649-b7bb-66ece68c8356",
+        "timestamp": 1785312757873
+      },
+      {
+        "executionId": "71e847ee-7e0f-4214-9792-11a3bd91b49d",
+        "chatSessionId": "sess_e826ddf7-353c-4649-b7bb-66ece68c8356",
+        "timestamp": 1785313895696
+      },
+      {
+        "executionId": "71e847ee-7e0f-4214-9792-11a3bd91b49d",
+        "chatSessionId": "sess_e826ddf7-353c-4649-b7bb-66ece68c8356",
+        "timestamp": 1785314332882
+      }
+    ],
+    "7.4 Create `src/presentation/components/TrendExportButton.tsx`": [
+      {
+        "executionId": "71e847ee-7e0f-4214-9792-11a3bd91b49d",
+        "chatSessionId": "sess_e826ddf7-353c-4649-b7bb-66ece68c8356",
+        "timestamp": 1785312757911
+      },
+      {
+        "executionId": "71e847ee-7e0f-4214-9792-11a3bd91b49d",
+        "chatSessionId": "sess_e826ddf7-353c-4649-b7bb-66ece68c8356",
+        "timestamp": 1785314338897
+      },
+      {
+        "executionId": "71e847ee-7e0f-4214-9792-11a3bd91b49d",
+        "chatSessionId": "sess_e826ddf7-353c-4649-b7bb-66ece68c8356",
+        "timestamp": 1785314475508
+      }
+    ],
+    "7.5 Create `src/presentation/components/SkeletonTrendDashboard.tsx`": [
+      {
+        "executionId": "71e847ee-7e0f-4214-9792-11a3bd91b49d",
+        "chatSessionId": "sess_e826ddf7-353c-4649-b7bb-66ece68c8356",
+        "timestamp": 1785312757939
+      },
+      {
+        "executionId": "71e847ee-7e0f-4214-9792-11a3bd91b49d",
+        "chatSessionId": "sess_e826ddf7-353c-4649-b7bb-66ece68c8356",
+        "timestamp": 1785314339877
+      },
+      {
+        "executionId": "71e847ee-7e0f-4214-9792-11a3bd91b49d",
+        "chatSessionId": "sess_e826ddf7-353c-4649-b7bb-66ece68c8356",
+        "timestamp": 1785314476287
+      }
+    ],
+    "8. Checkpoint - Ensure all tests pass": [
+      {
+        "executionId": "71e847ee-7e0f-4214-9792-11a3bd91b49d",
+        "chatSessionId": "sess_e826ddf7-353c-4649-b7bb-66ece68c8356",
+        "timestamp": 1785312757972
+      },
+      {
+        "executionId": "71e847ee-7e0f-4214-9792-11a3bd91b49d",
+        "chatSessionId": "sess_e826ddf7-353c-4649-b7bb-66ece68c8356",
+        "timestamp": 1785314482090
+      },
+      {
+        "executionId": "71e847ee-7e0f-4214-9792-11a3bd91b49d",
+        "chatSessionId": "sess_e826ddf7-353c-4649-b7bb-66ece68c8356",
+        "timestamp": 1785314512200
+      }
+    ],
+    "9.1 Create `src/presentation/pages/TrendDashboardPage.tsx`": [
+      {
+        "executionId": "71e847ee-7e0f-4214-9792-11a3bd91b49d",
+        "chatSessionId": "sess_e826ddf7-353c-4649-b7bb-66ece68c8356",
+        "timestamp": 1785312758003
+      },
+      {
+        "executionId": "71e847ee-7e0f-4214-9792-11a3bd91b49d",
+        "chatSessionId": "sess_e826ddf7-353c-4649-b7bb-66ece68c8356",
+        "timestamp": 1785314517639
+      },
+      {
+        "executionId": "71e847ee-7e0f-4214-9792-11a3bd91b49d",
+        "chatSessionId": "sess_e826ddf7-353c-4649-b7bb-66ece68c8356",
+        "timestamp": 1785314799247
+      }
+    ],
+    "9.2 Modify `src/App.tsx` to add /trend routing": [
+      {
+        "executionId": "71e847ee-7e0f-4214-9792-11a3bd91b49d",
+        "chatSessionId": "sess_e826ddf7-353c-4649-b7bb-66ece68c8356",
+        "timestamp": 1785312758038
+      },
+      {
+        "executionId": "71e847ee-7e0f-4214-9792-11a3bd91b49d",
+        "chatSessionId": "sess_e826ddf7-353c-4649-b7bb-66ece68c8356",
+        "timestamp": 1785314804674
+      },
+      {
+        "executionId": "71e847ee-7e0f-4214-9792-11a3bd91b49d",
+        "chatSessionId": "sess_e826ddf7-353c-4649-b7bb-66ece68c8356",
+        "timestamp": 1785314952813
+      }
+    ],
+    "11. Final checkpoint - Ensure all tests pass": [
+      {
+        "executionId": "71e847ee-7e0f-4214-9792-11a3bd91b49d",
+        "chatSessionId": "sess_e826ddf7-353c-4649-b7bb-66ece68c8356",
+        "timestamp": 1785312758107
+      },
+      {
+        "executionId": "71e847ee-7e0f-4214-9792-11a3bd91b49d",
+        "chatSessionId": "sess_e826ddf7-353c-4649-b7bb-66ece68c8356",
+        "timestamp": 1785314958753
+      },
+      {
+        "executionId": "71e847ee-7e0f-4214-9792-11a3bd91b49d",
+        "chatSessionId": "sess_e826ddf7-353c-4649-b7bb-66ece68c8356",
+        "timestamp": 1785315043475
+      }
+    ],
+    "1. Domain entities và port interfaces": [
+      {
+        "executionId": "71e847ee-7e0f-4214-9792-11a3bd91b49d",
+        "chatSessionId": "sess_e826ddf7-353c-4649-b7bb-66ece68c8356",
+        "timestamp": 1785313028809
+      }
+    ],
+    "2. Infrastructure layer": [
+      {
+        "executionId": "71e847ee-7e0f-4214-9792-11a3bd91b49d",
+        "chatSessionId": "sess_e826ddf7-353c-4649-b7bb-66ece68c8356",
+        "timestamp": 1785313444255
+      }
+    ],
+    "5. Presentation utilities": [
+      {
+        "executionId": "71e847ee-7e0f-4214-9792-11a3bd91b49d",
+        "chatSessionId": "sess_e826ddf7-353c-4649-b7bb-66ece68c8356",
+        "timestamp": 1785313445010
+      }
+    ],
+    "3. Application layer hook": [
+      {
+        "executionId": "71e847ee-7e0f-4214-9792-11a3bd91b49d",
+        "chatSessionId": "sess_e826ddf7-353c-4649-b7bb-66ece68c8356",
+        "timestamp": 1785313794053
+      }
+    ],
+    "6. Presentation components - Charts": [
+      {
+        "executionId": "71e847ee-7e0f-4214-9792-11a3bd91b49d",
+        "chatSessionId": "sess_e826ddf7-353c-4649-b7bb-66ece68c8356",
+        "timestamp": 1785314330410
+      }
+    ],
+    "7. Presentation components - Table and selectors": [
+      {
+        "executionId": "71e847ee-7e0f-4214-9792-11a3bd91b49d",
+        "chatSessionId": "sess_e826ddf7-353c-4649-b7bb-66ece68c8356",
+        "timestamp": 1785314476379
+      }
+    ],
+    "9. Page component and routing": [
+      {
+        "executionId": "71e847ee-7e0f-4214-9792-11a3bd91b49d",
+        "chatSessionId": "sess_e826ddf7-353c-4649-b7bb-66ece68c8356",
+        "timestamp": 1785314952857
+      }
+    ]
+  }
+}
