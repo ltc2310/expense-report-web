@@ -25,7 +25,11 @@ function formatDateLabel(isoDate: string): string {
 }
 
 export function TrendDashboardPage({ repository, token }: TrendDashboardPageProps) {
-  const [months, setMonths] = useState(6);
+  // Read months from URL param (set by bot), default to 6
+  const urlParams = new URLSearchParams(window.location.search);
+  const initialMonths = parseInt(urlParams.get("months") ?? "6", 10) || 6;
+  const [months, setMonths] = useState(initialMonths);
+
   const state = useTrendReport(repository, token, months);
 
   return (
