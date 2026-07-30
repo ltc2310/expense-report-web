@@ -22,11 +22,14 @@ export interface BreakdownItem {
  * Handles edge cases:
  * - Empty transactions → average = "0đ"
  * - Empty byCategory → topCategory = "—"
+ * - Income transactions (amount < 0) are excluded from average calculation
  */
 export function computeKpis(summary: WeeklySummary): KpiValues {
   const { total, transactions, byCategory } = summary;
 
-  const transactionCount = transactions.length;
+  // Only count expense transactions for count and average
+  const expenseTransactions = transactions.filter((t) => t.amount > 0);
+  const transactionCount = expenseTransactions.length;
 
   const average =
     transactionCount === 0

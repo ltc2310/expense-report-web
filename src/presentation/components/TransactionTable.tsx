@@ -27,7 +27,8 @@ export function TransactionTable({ transactions }: TransactionTableProps) {
   });
 
   const displayed = showAll ? sorted : sorted.slice(0, PAGE_SIZE);
-  const total = transactions.reduce((sum, t) => sum + t.amount, 0);
+  const totalExpense = transactions.filter(t => t.amount > 0).reduce((sum, t) => sum + t.amount, 0);
+  const totalIncome = transactions.filter(t => t.amount < 0).reduce((sum, t) => sum + Math.abs(t.amount), 0);
 
   return (
     <div className="rounded-lg border border-line bg-terminal p-5 overflow-x-auto">
@@ -58,19 +59,27 @@ export function TransactionTable({ transactions }: TransactionTableProps) {
                   <td className="py-2 pr-4 text-ink-dim truncate max-w-[150px]">
                     {t.note}
                   </td>
-                  <td className="py-2 text-right font-mono tabular-nums text-jade whitespace-nowrap">
-                    {formatCurrency(t.amount)}
+                  <td className={`py-2 text-right font-mono tabular-nums whitespace-nowrap ${t.amount < 0 ? "text-amber" : "text-jade"}`}>
+                    {formatCurrency(Math.abs(t.amount))}
                   </td>
                 </tr>
               ))}
             </tbody>
             <tfoot>
               <tr className="border-t border-line font-semibold text-ink">
-                <td colSpan={3} className="py-2 pr-4">Tổng cộng</td>
+                <td colSpan={3} className="py-2 pr-4">Tổng chi</td>
                 <td className="py-2 text-right font-mono tabular-nums text-jade whitespace-nowrap">
-                  {formatCurrency(total)}
+                  {formatCurrency(totalExpense)}
                 </td>
               </tr>
+              {totalIncome > 0 && (
+                <tr className="font-semibold text-ink">
+                  <td colSpan={3} className="py-2 pr-4">Tổng thu</td>
+                  <td className="py-2 text-right font-mono tabular-nums text-amber whitespace-nowrap">
+                    {formatCurrency(totalIncome)}
+                  </td>
+                </tr>
+              )}
             </tfoot>
           </table>
 

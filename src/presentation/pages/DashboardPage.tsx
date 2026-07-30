@@ -1,6 +1,7 @@
 import { ReportRepository } from "../../domain/ports/ReportRepository";
 import { useWeeklyReport } from "../../application/hooks/useWeeklyReport";
 import { computeKpis } from "../utils/kpiCalculations";
+import { formatCurrency } from "../utils/formatters";
 import SkeletonDashboard from "../components/SkeletonDashboard";
 import { SummaryHeader } from "../components/SummaryHeader";
 import { KpiCard } from "../components/KpiCard";
@@ -43,6 +44,7 @@ export function DashboardPage({ repository, token }: DashboardPageProps) {
           {/* KPI Cards - each span 3 columns on desktop */}
           {(() => {
             const kpis = computeKpis(state.data);
+            const hasIncome = (state.data.totalIncome ?? 0) > 0;
             return (
               <>
                 <div className="col-span-1 lg:col-span-3">
@@ -53,6 +55,16 @@ export function DashboardPage({ repository, token }: DashboardPageProps) {
                     ariaLabel={`Tổng chi tiêu: ${kpis.total}`}
                   />
                 </div>
+                {hasIncome && (
+                  <div className="col-span-1 lg:col-span-3">
+                    <KpiCard
+                      icon="💵"
+                      label="Tổng thu nhập"
+                      value={formatCurrency(state.data.totalIncome!)}
+                      ariaLabel={`Tổng thu nhập: ${formatCurrency(state.data.totalIncome!)}`}
+                    />
+                  </div>
+                )}
                 <div className="col-span-1 lg:col-span-3">
                   <KpiCard
                     icon="💳"
@@ -69,14 +81,16 @@ export function DashboardPage({ repository, token }: DashboardPageProps) {
                     ariaLabel={`Chi tiêu trung bình: ${kpis.average}`}
                   />
                 </div>
-                <div className="col-span-1 lg:col-span-3">
-                  <KpiCard
-                    icon="🏷️"
-                    label="Danh mục cao nhất"
-                    value={kpis.topCategory}
-                    ariaLabel={`Danh mục cao nhất: ${kpis.topCategory}`}
-                  />
-                </div>
+                {!hasIncome && (
+                  <div className="col-span-1 lg:col-span-3">
+                    <KpiCard
+                      icon="🏷️"
+                      label="Danh mục cao nhất"
+                      value={kpis.topCategory}
+                      ariaLabel={`Danh mục cao nhất: ${kpis.topCategory}`}
+                    />
+                  </div>
+                )}
               </>
             );
           })()}
